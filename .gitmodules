@@ -22,3 +22,6 @@
 [submodule "pack/plug/start/cmp-nvim-lsp"]
 	path = pack/plug/start/cmp-nvim-lsp
 	url = https://github.com/hrsh7th/cmp-nvim-lsp
+[submodule "pack/plug/start/nvim-treesitter"]
+	path = pack/plug/start/nvim-treesitter
+	url = https://github.com/nvim-treesitter/nvim-treesitter

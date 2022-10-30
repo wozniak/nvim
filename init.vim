@@ -27,6 +27,13 @@ function s:InitLSP()
 lua <<EOF
 	require('lualine').setup()
 
+	require('nvim-treesitter.configs').setup {
+		ensure_installed = {"c", "lua", "rust", "zig"},
+		highlight = {
+			enable = true
+		}
+	}
+
 	local cmp = require "cmp"
 	local cmp_lsp = require "cmp_nvim_lsp"
 	local lspconfig = require "lspconfig"
@@ -61,7 +68,7 @@ lua <<EOF
 		nn("<Leader>R", "<cmd>lua vim.lsp.buf.references()<CR>")
 		nn("<Leader>f", "<cmd>lua vim.lsp.buf.formatting()<CR>")
 	end
-	local servers = {"clangd"} -- add others here if you use them!
+	local servers = {"clangd", "zls", "rust_analyzer"} -- add others here if you use them!
 	for _, lsp in pairs(servers) do
 		lspconfig[lsp].setup {
 			capabilities = caps,
