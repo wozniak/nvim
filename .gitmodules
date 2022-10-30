@@ -1,0 +1,24 @@
+[submodule "pack/plug/start/vim-github-dark"]
+	path = pack/plug/start/vim-github-dark
+	url = https://github.com/vv9k/vim-github-dark
+[submodule "pack/plug/start/fzf"]
+	path = pack/plug/start/fzf
+	url = https://github.com/junegunn/fzf
+[submodule "pack/plug/start/fzf.vim"]
+	path = pack/plug/start/fzf.vim
+	url = https://github.com/junegunn/fzf.vim
+[submodule "pack/plug/start/lualine.nvim"]
+	path = pack/plug/start/lualine.nvim
+	url = https://github.com/nvim-lualine/lualine.nvim
+[submodule "pack/plug/start/nvim-lspconfig"]
+	path = pack/plug/start/nvim-lspconfig
+	url = https://github.com/neovim/nvim-lspconfig
+[submodule "pack/plug/start/nvim-cmp"]
+	path = pack/plug/start/nvim-cmp
+	url = https://github.com/hrsh7th/nvim-cmp
+[submodule "pack/plug/start/vim-signify"]
+	path = pack/plug/start/vim-signify
+	url = https://github.com/mhinz/vim-signify
+[submodule "pack/plug/start/cmp-nvim-lsp"]
+	path = pack/plug/start/cmp-nvim-lsp
+	url = https://github.com/hrsh7th/cmp-nvim-lsp
