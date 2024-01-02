@@ -14,6 +14,7 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Plugin manager
 require("lazy").setup({
+  "jeffkreeftmeijer/vim-dim",
   "junegunn/seoul256.vim",	
   "neovim/nvim-lspconfig",
   "hrsh7th/nvim-cmp",
