@@ -18,5 +18,5 @@ set noshowmode
 if !has('gui_running')
 	colorscheme dim
 else
-	colorscheme seoul256
+	colorscheme habamax
 endif
