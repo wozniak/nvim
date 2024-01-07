@@ -12,11 +12,11 @@ set guioptions-=r
 set guioptions-=R
 set guioptions-=l
 set guioptions-=L
-set gfn=DejaVuSansM\ Nerd\ Font\ Mono:h12
+set gfn=Fira\ Code:h12
 set noshowmode
 
 if !has('gui_running')
 	colorscheme dim
 else
-	colorscheme habamax
+	colorscheme monochrome
 endif
