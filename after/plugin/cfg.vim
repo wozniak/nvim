@@ -15,8 +15,6 @@ set guioptions-=L
 set gfn=Fira\ Code:h12
 set noshowmode
 
-if !has('gui_running')
-	colorscheme dim
-else
-	colorscheme monochrome
-endif
+set formatoptions+=a
+
+colorscheme vacme

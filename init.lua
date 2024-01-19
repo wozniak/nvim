@@ -12,8 +12,11 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+vim.cmd("let g:vimtex_view_method = \"zathura\"")
+
 -- Plugin manager
 require("lazy").setup({
+  "lervag/vimtex",
   "tpope/vim-fugitive",
   "jeffkreeftmeijer/vim-dim",
   "neovim/nvim-lspconfig",
@@ -23,7 +26,6 @@ require("lazy").setup({
   "saadparwaiz1/cmp_luasnip",
   "hrsh7th/cmp-nvim-lsp",
   "L3MON4D3/LuaSnip",
-  "rafamadriz/friendly-snippets",
   {"nvim-telescope/telescope.nvim", dependencies = {"nvim-lua/plenary.nvim"}},
   "nvim-lualine/lualine.nvim",
 })

@@ -2,7 +2,7 @@
 local lspconfig = require('lspconfig')
 local lsp_capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-local servers = {"clangd", "zls", "rust_analyzer", "lua_ls"}
+local servers = {"clangd", "zls", "rust_analyzer", "lua_ls", "texlab"}
   for _, lsp in pairs(servers) do
     lspconfig[lsp].setup {
       capabilities = lsp_capabilities,
@@ -40,6 +40,7 @@ local luasnip = require('luasnip')
 
 local select_opts = {behavior = cmp.SelectBehavior.Select}
 cmp.setup({
+  experimental = { ghost_text = true },
   formatting = {
     fields = {'menu', 'abbr', 'kind'},
     format = function(entry, item)
