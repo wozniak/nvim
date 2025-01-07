@@ -40,10 +40,6 @@ require("lazy").setup({
 		{ 'L3MON4D3/LuaSnip' },
 		{ 'lervag/vimtex', lazy = false },
 		{
-			'preservim/vim-markdown',
-			dependencies = { 'godlygeek/tabular' },
-		},
-		{
 			'nvim-lualine/lualine.nvim',
 			dependencies = { 'nvim-tree/nvim-web-devicons' },
 			opts = {},
