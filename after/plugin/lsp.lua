@@ -69,7 +69,7 @@ end
 local caps = vim.lsp.protocol.make_client_capabilities()
 caps = cmp_lsp.default_capabilities(caps)
 
-local servers = {'clangd', 'rust_analyzer', 'zls', 'texlab'}
+local servers = {'clangd', 'rust_analyzer', 'zls', 'texlab', 'biome'}
 for _, lsp in pairs(servers) do
 	lspconfig[lsp].setup {
 		capabilities = caps,

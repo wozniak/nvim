@@ -30,7 +30,7 @@ require("lazy").setup({
 			opts = {},
 		},
 		{ "m4xshen/autoclose.nvim", opts = {} },
-		{ "junegunn/seoul256.vim" },
+		{ "phanviet/vim-monokai-pro" },
 		{ "neovim/nvim-lspconfig" },
 		{ 'hrsh7th/cmp-nvim-lsp' },
 		{ 'hrsh7th/cmp-buffer' },
@@ -40,6 +40,10 @@ require("lazy").setup({
 		{ 'L3MON4D3/LuaSnip' },
 		{ 'lervag/vimtex', lazy = false },
 		{
+			'preservim/vim-markdown',
+			dependencies = { 'godlygeek/tabular' },
+		},
+		{
 			'nvim-lualine/lualine.nvim',
 			dependencies = { 'nvim-tree/nvim-web-devicons' },
 			opts = {},
@@ -47,7 +51,7 @@ require("lazy").setup({
 	},
 	-- Configure any other settings here. See the documentation for more details.
 	-- colorscheme that will be used when installing plugins.
-	install = { colorscheme = { "seoul256" } },
+	install = { colorscheme = { "monokai" } },
 	-- automatically check for plugin updates
 	checker = { enabled = true, notify = false },
 })
